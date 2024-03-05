@@ -9,8 +9,13 @@ body {
 }
 
 body {
-  color: white;
+  color: rgba(255, 255, 255, 0.9);
   background: #030517;
+}
+
+.text-outline {
+  color: transparent;
+  -webkit-text-stroke: 1px white;
 }
 
 /* :root {
