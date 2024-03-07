@@ -5,6 +5,7 @@ import Nav from "./components/Nav.jsx";
 import GraphSection from "./components/graphSection.jsx";
 import CardSection from "./components/cardSection.jsx";
 import CommSection from "./components/CommSection";
+import EcoCard from "./components/ecoCard";
 export default function Home() {
   return (
     <>
@@ -13,6 +14,7 @@ export default function Home() {
       <GraphSection />
       <CardSection />
       <CommSection />
+      <EcoCard />
       <Footer />
     </>
   );

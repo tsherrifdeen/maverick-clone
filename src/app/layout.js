@@ -1,5 +1,17 @@
 import { Roboto } from "next/font/google";
 import "./globals.css";
+// import local from "next/font/local";
+
+// const basel = local({
+//   src: [
+//     {
+//       path: "../",
+//       weight: "800",
+//     },
+//   ],
+//   variable: "--font-deacon",
+// });
+
 const roboto = Roboto({
   subsets: ["latin"],
   weight: ["400", "700", "900"],
