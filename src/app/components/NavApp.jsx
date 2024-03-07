@@ -15,7 +15,7 @@ const NavApp = () => {
             >
               <path
                 d="M24.0017 2.07213e-07C10.7473 -0.00172294 0.00172335 10.7438 2.07213e-07 23.9983C-0.00172294 37.2527 10.7438 47.9983 23.9983 48C37.2527 48.0017 47.9983 37.2562 48 24.0017C48 24 48 24 48 23.9983C47.9983 10.7455 37.2545 0.00172335 24.0017 2.07213e-07Z"
-                fill="#780EFF"
+                fill="rgb(120, 14, 255)"
               ></path>
               <path
                 d="M23.7284 28.0735V22.6842L9.20605 30.2458H36.165V15.1226L23.7284 28.0735Z"
@@ -59,7 +59,6 @@ const NavApp = () => {
           <div className="ml-4">
             <div
               role="menuitem"
-              tabIndex="0"
               id="engage"
               aria-haspopup="true"
               aria-expanded="false"
@@ -70,14 +69,10 @@ const NavApp = () => {
           <a href="/stake" className="ml-4 text-white opacity-80">
             <div className="flex items-center">
               <p className="text-base">Stake Mav</p>
-              <img
-                src="https://github.com/trustwallet/assets/blob/master/blockchains/ethereum/info/logo.png?raw=true"
-                alt="logo"
-                className="ml-4"
-              />
+              <img src="" alt="logo" className="ml-4" />
             </div>
           </a>
-          <button className="px-4 py-2 ml-4 text-white rounded-md bg-violet-800 ">
+          <button className="px-4 py-2 ml-4 text-white rounded-md bg-violet-800">
             <p className="text-base">Connect wallet</p>
           </button>
           <div className="ml-4">

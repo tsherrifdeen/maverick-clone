@@ -1,7 +1,7 @@
 const cardSection = () => {
   return (
     <div className="my-60">
-      <h1 class="uppercase text-6xl font-extrabold tracking-wide mb-16 text-center">
+      <h1 className="mb-16 text-6xl font-extrabold tracking-wide text-center uppercase">
         Increase Efficiency <span className="text-outline">with Maverick</span>
       </h1>
       <div className="flex flex-row items-stretch overflow-x-scroll mx-auto py-6 w-full max-w-[1400px]">
