@@ -9,8 +9,8 @@ body {
 }
 
 body {
-  color: rgba(255, 255, 255, 0.9);
-  background: #030517;
+  color: rgba(255, 255, 255, 0.9) !important;
+  background: #030517 !important;
 }
 
 .text-outline {

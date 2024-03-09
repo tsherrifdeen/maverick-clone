@@ -9,11 +9,25 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@binance/w3w-qrcode-modal": "^1.1.4",
+    "@chakra-ui/next-js": "^2.2.0",
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
+    "@tanstack/react-query": "^5.25.0",
+    "@web3auth/base": "^8.0.0",
+    "@web3auth/ethereum-provider": "^8.0.1",
+    "@web3auth/modal": "^8.0.1",
+    "@web3auth/openlogin-adapter": "^8.0.1",
+    "framer-motion": "^11.0.8",
     "next": "14.1.1",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "viem": "^2.7.20",
+    "wagmi": "^2.5.7"
   },
   "devDependencies": {
+    "@types/react": "^18.2.64",
     "autoprefixer": "^10.4.18",
     "postcss": "^8.4.35",
     "tailwindcss": "^3.4.1"
