@@ -82,6 +82,7 @@ export const ConnectWalletModal = ({ isModalOpen, changeModalState }) => {
     const connector = connectors.find((connector) => connector.name === _connector_id);
     if (connector) {
       console.log("[Connector-Found]: ", connector);
+      if (_connector_id === 'WalletConnect') changeModalState('modal_close');
       connect({ connector: connector }, {
         onSettled: (data) => { console.log("[Connector-Settled]: ", data); },
         onSuccess: (data) => { console.log("[Connector-Success]: ", data); },

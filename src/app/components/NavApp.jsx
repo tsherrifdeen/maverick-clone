@@ -97,11 +97,11 @@ const NavApp = ({ isModalOpen, changeModalState }) => {
           {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
           <button className="px-4 py-2 ml-4 text-white rounded-md bg-violet-800">
             {
-              status === "connecting" ?
+              status === "connecting" && isModalOpen === true ?
                 <p className="text-base" onClick={ConnectWalletButtonClickHandler}> Connecting . . . </p>
                 :
                 status === "connected" ?
-                  <p className="text-base" onClick={ConnectWalletButtonClickHandler}> {ensName ? `${ensName} (${address})` : formatAddress(address)} </p>
+                  <p className="text-base" onClick={ConnectWalletButtonClickHandler}> {ensName ? `${ensName} (${formatAddress(address)})` : formatAddress(address)} </p>
                   :
                   <p className="text-base" onClick={ConnectWalletButtonClickHandler}> Connect Wallet </p>
             }

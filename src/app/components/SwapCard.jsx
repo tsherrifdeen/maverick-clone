@@ -88,11 +88,11 @@ const SwapCard = ({ isModalOpen, changeModalState }) => {
         </div>
         <button type="button" className="w-full px-4 py-3 text-white rounded-lg bg-violet-800">
           {
-            status === "connecting" ?
+            status === "connecting" && isModalOpen === true ?
               <p className="font-bold" onClick={ConnectWalletClickHandler} > Connecting . . . </p>
               :
               status === "connected" ?
-                <p className="font-bold" onClick={ConnectWalletClickHandler} > {ensName ? `${ensName} (${address})` : formatAddress(address)} </p>
+                <p className="font-bold" onClick={ConnectWalletClickHandler} > {ensName ? `${ensName} (${formatAddress(address)})` : formatAddress(address)} </p>
                 :
                 <p className="font-bold" onClick={ConnectWalletClickHandler} > Connect Wallet </p>
           }
