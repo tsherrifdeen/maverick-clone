@@ -13,7 +13,7 @@ const graphSection = () => {
           <a
             className="p-3 font-semibold tracking-wide uppercase border-2 rounded-full border-violet-800"
             href="https://docs.mav.xyz/guides/liquidity-providers/understanding-modes#mode-right"
-            target="_blank"
+            target="_blank" rel="noreferrer"
           >
             Learn More <span>→</span>
           </a>
@@ -38,7 +38,7 @@ const graphSection = () => {
         <a
           className="p-3 font-semibold tracking-wide uppercase border-2 rounded-full border-violet-800"
           href="https://docs.mav.xyz/guides/liquidity-providers/understanding-modes#mode-left"
-          target="_blank"
+          target="_blank" rel="noreferrer"
         >
           Learn More <span>→</span>
         </a>
@@ -46,7 +46,8 @@ const graphSection = () => {
       <div className="col-span-3">
         <div className="">
           <img
-            src="https://pub-a9e95ffe81d843ed8789f708ee388a09.r2.dev/modeLeftGraph.gif"
+            // src="https://pub-a9e95ffe81d843ed8789f708ee388a09.r2.dev/modeLeftGraph.gif"
+            src="/mode-static-graph.gif"
             alt="Mode Left Graph"
           />
         </div>
@@ -61,7 +62,7 @@ const graphSection = () => {
         <a
           className="p-3 font-semibold tracking-wide uppercase border-2 rounded-full border-violet-800"
           href="https://docs.mav.xyz/guides/liquidity-providers/understanding-modes#mode-left"
-          target="_blank"
+          target="_blank" rel="noreferrer"
         >
           Learn More <span>→</span>
         </a>
@@ -69,7 +70,7 @@ const graphSection = () => {
       <div className="col-span-3">
         <div className="">
           <img
-            src="https://pub-a9e95ffe81d843ed8789f708ee388a09.r2.dev/modeBothGraph.gif"
+            src="/modeBothStatic.gif"
             alt="Mode Left Graph"
           />
         </div>
@@ -85,7 +86,7 @@ const graphSection = () => {
         <a
           className="p-3 font-semibold tracking-wide uppercase border-2 rounded-full border-violet-800"
           href="https://docs.mav.xyz/guides/liquidity-providers/understanding-modes#mode-left"
-          target="_blank"
+          target="_blank" rel="noreferrer"
         >
           Learn More <span>→</span>
         </a>
@@ -93,7 +94,8 @@ const graphSection = () => {
       <div className="col-span-3">
         <div className="">
           <img
-            src="https://pub-a9e95ffe81d843ed8789f708ee388a09.r2.dev/modeStaticGraph.gif"
+            // src="https://pub-a9e95ffe81d843ed8789f708ee388a09.r2.dev/modeStaticGraph.gif"
+            src="/mode-static-graph.gif"
             alt="Mode Left Graph"
           />
         </div>
