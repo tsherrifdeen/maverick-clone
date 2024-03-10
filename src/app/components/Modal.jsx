@@ -5,7 +5,7 @@ import { useAccount, useConnect } from "wagmi"
 import {
   Modal, ModalContent, ModalBody, ModalCloseButton,
   Flex, Box, SimpleGrid,
-  useSteps
+  useSteps, useMediaQuery
 
 } from '@chakra-ui/react'
 
@@ -39,6 +39,7 @@ export const ConnectWalletModal = ({ isModalOpen, changeModalState }) => {
 
   const [web3auth, setWeb3auth] = useState(null);
   const [loggedIn, setLoggedIn] = useState(false);
+
 
   // Torus Wallet
   useEffect(() => {
@@ -90,6 +91,7 @@ export const ConnectWalletModal = ({ isModalOpen, changeModalState }) => {
   }
 
 
+  const [OnMediumScreenAndAbove] = useMediaQuery('(min-width: 768px)');
 
   return (
     <>
@@ -97,9 +99,9 @@ export const ConnectWalletModal = ({ isModalOpen, changeModalState }) => {
         <ModalContent>
           <ModalBody>
             <ModalCloseButton size={"lg"} width={'32px'} height={"32px"} color={"#707481"} backgroundColor={"#ebebed"} borderRadius={"30px"} colorScheme="gray" />
-            <div style={{ backgroundColor: "white", color: "black" }}>
+            <div style={{ backgroundColor: "white", color: "black", borderRadius: "24px" }}>
               <div className="flex">
-                <div className="sidebar py-6 pr-6 bg-[#ebebed] text-[#1a1d26]">
+                <div className="sidebar hidden md:block py-6 px-6 rounded-l-3xl bg-[#ebebed] text-[#1a1d26]">
                   <div className="flex flex-col max-w-60">
                     <div className="mb-4">
                       <svg
@@ -126,8 +128,8 @@ export const ConnectWalletModal = ({ isModalOpen, changeModalState }) => {
                     <h4 className="m-4 leading-4 font-bold">Available Wallets</h4>
                   </div>
                   <hr style={{ height: "16px", width: "100%", color: "#707481" }} />
-                  <div className="wallets pl-4 pb-4">
-                    <SimpleGrid columns={2} spacingX='8px' spacingY='8px'>
+                  <div className="wallets px-4 pb-24">
+                    <SimpleGrid columns={OnMediumScreenAndAbove ? 2 : 1} spacingX='8px' spacingY='8px' >
 
                       <Flex padding={'1rem'} direction={'row'} borderRadius={'24px'} border={'1px solid #d0d4f7'} alignItems={'center'} cursor={'pointer'} onClick={() => {
                         console.log("[MetaMask]:");

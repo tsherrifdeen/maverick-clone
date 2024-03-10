@@ -18,7 +18,7 @@ const NavApp = ({ isModalOpen, changeModalState }) => {
 
   return (
     <div className="container p-3 mx-auto">
-      <div className="flex items-center justify-between p-4">
+      <div className="flex flex-wrap items-center justify-between p-4">
         <div className="flex items-center">
           <a href="/">
             {/* biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
@@ -64,7 +64,7 @@ const NavApp = ({ isModalOpen, changeModalState }) => {
             </a>
           </div>
         </div>
-        <div className="flex items-center">
+        <div className="flex flex-wrap items-center justify-center">
           <a
             href="https://docs.mav.xyz"
             target="_blank"
