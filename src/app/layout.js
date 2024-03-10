@@ -5,17 +5,6 @@ import "./globals.css";
 import { WagmiContextProvider } from "./providers/wagmi";
 import { config } from './config'
 
-// import local from "next/font/local";
-
-// const basel = local({
-//   src: [
-//     {
-//       path: "../",
-//       weight: "800",
-//     },
-//   ],
-//   variable: "--font-deacon",
-// });
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -25,9 +14,6 @@ const roboto = Roboto({
 export const metadata = {
   title: "Maverick Protocol",
   description: "Maverick Protocol",
-  // icons: {
-  //   icon: '/favicon.ico', // /public path
-  // },
 };
 
 export default function RootLayout({ children }) {
