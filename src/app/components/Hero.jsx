@@ -1,4 +1,5 @@
 import graph from "../img/graph.svg";
+
 const Hero = () => {
   return (
     <>
@@ -9,8 +10,8 @@ const Hero = () => {
           </h1>
 
           <div className="opacity-1">
-            <a href="https://app.mav.xyz" target="_blank">
-              <button className="px-4 py-2 text-white border-2 rounded-full border-violet-800">
+            <a href="https://app.mav.xyz" target="_blank" rel="noreferrer">
+              <button type="button" className="px-4 py-2 text-white border-2 rounded-full border-violet-800">
                 LAUNCH APP →
               </button>
             </a>
@@ -18,10 +19,10 @@ const Hero = () => {
         </div>
 
         <div>
-          {/* <img src={graph.src} class="" />
+          {/* <img src={graph.src} className="" />
           <img
             src="/assets/tronLandscape.d5d9a20b.svg"
-            class="translate-y-0 translate-z-0"
+            className="translate-y-0 translate-z-0"
           /> */}
         </div>
       </div>
