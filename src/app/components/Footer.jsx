@@ -10,7 +10,7 @@ const Footer = () => {
         </div>
         <a
           target="_blank"
-          href="http://app.mav.xyz"
+          href="/launch"
           className="font-extrabold uppercase opacity-60"
         >
           Launch App
