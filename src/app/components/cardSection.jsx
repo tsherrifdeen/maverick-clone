@@ -1,10 +1,10 @@
 const cardSection = () => {
   return (
     <div className="my-60">
-      <h1 className="mb-16 text-6xl font-extrabold tracking-wide text-center uppercase">
+      <h1 className="mb-16 text-6xl font-extrabold text-center uppercase">
         Increase Efficiency <span className="text-outline">with Maverick</span>
       </h1>
-      <div className="flex flex-row items-stretch overflow-x-scroll mx-auto py-6 w-full max-w-[1400px]">
+      <div className="flex flex-row items-stretch overflow-x-scroll scrollable mx-auto py-6 w-full max-w-[1400px]">
         <div className="flex-shrink-0 w-96" />
         <div className="flex-shrink-0 p-6 m-2 bg-gray-300 shadow-sm bg-opacity-5 w-96 rounded-2xl backdrop-filter backdrop-blur-lg">
           <a href="https://docs.mav.xyz" target="_blank" rel="noreferrer">
@@ -14,7 +14,7 @@ const cardSection = () => {
             <hr className="border border-gray-800" />
             <div className="">
               <div className="my-8">
-                <h2 className="mb-4 text-2xl font-medium tracking-wide">
+                <h2 className="mb-4 text-2xl font-medium ">
                   Getting Started on Maverick
                 </h2>
                 <p className="opacity-80 text-md">
@@ -36,7 +36,8 @@ const cardSection = () => {
         <div className="flex-shrink-0 p-6 m-2 bg-gray-300 shadow-sm bg-opacity-5 w-96 rounded-2xl backdrop-filter backdrop-blur-lg">
           <a
             href="https://docs.mav.xyz/further-information/frequently-asked-questions"
-            target="_blank" rel="noreferrer"
+            target="_blank"
+            rel="noreferrer"
           >
             <div className="mb-4 text-sm tracking-wider uppercase opacity-90">
               <h4>MAVERICK FAQ</h4>
@@ -44,7 +45,7 @@ const cardSection = () => {
             <hr className="border border-gray-800" />
             <div className="">
               <div className="my-8">
-                <h2 className="mb-4 text-2xl font-medium tracking-wide">
+                <h2 className="mb-4 text-2xl font-medium ">
                   Maverick Frequently Asked Questions
                 </h2>
                 <p className="opacity-80 text-md">
@@ -66,7 +67,8 @@ const cardSection = () => {
         <div className="flex-shrink-0 p-6 m-2 bg-gray-300 shadow-sm bg-opacity-5 w-96 rounded-2xl backdrop-filter backdrop-blur-lg">
           <a
             href="https://medium.com/maverick-protocol/maverick-amm-the-revolutionary-amm-that-enables-directional-lping-unlocking-greater-capital-34427f5ac22f"
-            target="_blank" rel="noreferrer"
+            target="_blank"
+            rel="noreferrer"
           >
             <div className="mb-4 text-sm tracking-wider uppercase opacity-90">
               <h4>MAVERICK AMM</h4>
@@ -74,7 +76,7 @@ const cardSection = () => {
             <hr className="border border-gray-800" />
             <div className="">
               <div className="my-8">
-                <h2 className="mb-4 text-2xl font-medium tracking-wide">
+                <h2 className="mb-4 text-2xl font-medium ">
                   The Revolutionary AMM that enables Directional LPing,
                   unlocking greater capital control and higher capital
                   efficiency.
@@ -99,7 +101,8 @@ const cardSection = () => {
         <div className="flex-shrink-0 p-6 m-2 bg-gray-300 shadow-sm bg-opacity-5 w-96 rounded-2xl backdrop-filter backdrop-blur-lg">
           <a
             href="https://medium.com/maverick-protocol/introducing-maverick-a-protocol-for-decentralized-permissionless-trading-and-staking-of-any-asset-40b2a8bb1d54"
-            target="_blank" rel="noreferrer"
+            target="_blank"
+            rel="noreferrer"
           >
             <div className="mb-4 text-sm tracking-wider uppercase opacity-90">
               <h4>MAVERICK LITEPAPER</h4>
@@ -107,7 +110,7 @@ const cardSection = () => {
             <hr className="border border-gray-800" />
             <div className="">
               <div className="my-8">
-                <h2 className="mb-4 text-2xl font-medium tracking-wide">
+                <h2 className="mb-4 text-2xl font-medium ">
                   The infrastructure for the most liquid markets in DeFi.
                 </h2>
                 <p className="opacity-80 text-md">
@@ -131,7 +134,8 @@ const cardSection = () => {
         <div className="flex-shrink-0 p-6 m-2 bg-gray-300 shadow-sm bg-opacity-5 w-96 rounded-2xl backdrop-filter backdrop-blur-lg">
           <a
             href="https://docs.mav.xyz/guides/liquidity-providers/understanding-modes"
-            target="_blank" rel="noreferrer"
+            target="_blank"
+            rel="noreferrer"
           >
             <div className="mb-4 text-sm tracking-wider uppercase opacity-90">
               <h4>MAVERICK GUIDE</h4>
@@ -139,7 +143,7 @@ const cardSection = () => {
             <hr className="border border-gray-800" />
             <div className="">
               <div className="my-8">
-                <h2 className="mb-4 text-2xl font-medium tracking-wide">
+                <h2 className="mb-4 text-2xl font-medium ">
                   Learn more about Maverick AMM’s four powerful liquidity Modes.
                 </h2>
                 <p className="opacity-80 text-md">

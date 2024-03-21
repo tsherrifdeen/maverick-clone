@@ -7,10 +7,34 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
 }
-
+@font-face {
+  font-family: "Basel Grotesk";
+  font-style: normal;
+  font-weight: normal;
+  src: url(../app/fonts/BaselGrotesk-Regular.b1418a50.otf);
+}
+@font-face {
+  font-family: "Basel Grotesk";
+  font-style: normal;
+  font-weight: bold;
+  src: url(../app/fonts/BaselGrotesk-Bold.190195fa.otf);
+}
+@font-face {
+  font-family: "Basel Grotesk";
+  font-style: normal;
+  font-weight: lighter;
+  src: url(../app/fonts/BaselGrotesk-Light.ab4ac142.otf);
+}
+@font-face {
+  font-family: "Basel Grotesk";
+  font-style: normal;
+  font-weight: 350;
+  src: url(../app/fonts/BaselGrotesk-Book.7af4ab64.otf);
+}
 body {
-  color: rgba(255, 255, 255, 0.9) !important;
+  color: rgba(255, 255, 255) !important;
   background: #030517 !important;
+  font-family: "Basel Grotesk", Arial, sans-serif !important;
 }
 
 .text-outline {
@@ -26,6 +50,32 @@ body {
 .chakra-modal__content {
   border-radius: 24px !important;
 }
+.loading-graph {
+  background: url("../app/img/loadingGraph.34b96599.png") no-repeat center
+    center;
+  background-size: auto;
+}
+/* width */
+.scrollable::-webkit-scrollbar {
+  width: 0;
+}
+
+/* Track */
+/* ::-webkit-scrollbar-track {
+  background: #888;
+  border-radius: 5px;
+} */
+
+/* Handle */
+/* ::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 5px;
+} */
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+} */
 /* :root {
   --max-width: 1100px;
   --border-radius: 12px;
