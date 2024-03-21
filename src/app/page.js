@@ -4,9 +4,10 @@ import Footer from "./components/Footer";
 import Hero from "./components/Hero.jsx";
 import Nav from "./components/Nav.jsx";
 import GraphSection from "./components/graphSection.jsx";
-import CardSection from "./components/cardSection.jsx";
+import CardSection from "./components/CardSection";
 import CommSection from "./components/CommSection";
-import EcoCard from "./components/ecoCard";
+import EcoCard from "./components/EcoCard";
+import FooterAbout from "./components/FooterAbout";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <CardSection />
       <CommSection />
       <EcoCard />
+      <FooterAbout />
       <Footer />
     </>
   );

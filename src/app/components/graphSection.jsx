@@ -2,7 +2,7 @@ const graphSection = () => {
   return (
     <div className="h-[90vh] overflow-y-scroll scrollable mt-36">
       <div className="grid max-w-[1200px] mx-auto items-center grid-cols-5 gap-x-20">
-        <div className="col-span-2">
+        <div className="col-span-2 h-[90vh]">
           <span className="text-xs opacity-70">1 / 4</span>
           <p className="text-2xl my-9">
             When prices are going up, you can use
@@ -19,7 +19,7 @@ const graphSection = () => {
             Learn More <span>→</span>
           </a>
         </div>
-        <div className="col-span-3">
+        <div className="col-span-3 h-[90vh]">
           <div className="">
             <img
               src="https://pub-a9e95ffe81d843ed8789f708ee388a09.r2.dev/modeRightGraph.gif"
@@ -27,7 +27,7 @@ const graphSection = () => {
             />
           </div>
         </div>
-        <div className="col-span-2">
+        <div className="col-span-2 h-[90vh]">
           <span className="text-xs opacity-70">2 / 4</span>
           <p className="text-2xl my-9">
             When prices are going down, you can use{" "}
@@ -44,7 +44,7 @@ const graphSection = () => {
             Learn More <span>→</span>
           </a>
         </div>
-        <div className="col-span-3">
+        <div className="col-span-3 h-[90vh]">
           <div className="">
             <img
               // src="https://pub-a9e95ffe81d843ed8789f708ee388a09.r2.dev/modeLeftGraph.gif"
@@ -53,7 +53,7 @@ const graphSection = () => {
             />
           </div>
         </div>
-        <div className="col-span-2">
+        <div className="col-span-2 h-[90vh]">
           <span className="text-xs opacity-70">3 / 4</span>
           <p className="text-2xl font-normal my-9">
             In sideways markets, such as stable pairs, you can use{" "}
@@ -69,12 +69,12 @@ const graphSection = () => {
             Learn More <span>→</span>
           </a>
         </div>
-        <div className="col-span-3">
+        <div className="col-span-3 h-[90vh]">
           <div className="">
             <img src="/modeBothStatic.gif" alt="Mode Left Graph" />
           </div>
         </div>
-        <div className="col-span-2">
+        <div className="col-span-2 h-[90vh]">
           <span className="text-xs opacity-70">4 / 4</span>
           <p className="text-2xl font-normal my-9">
             You can use <span className="font-bold underline">Mode Static</span>{" "}
@@ -91,7 +91,7 @@ const graphSection = () => {
             Learn More <span>→</span>
           </a>
         </div>
-        <div className="col-span-3">
+        <div className="col-span-3 h-[90vh]">
           <div className="">
             <img
               // src="https://pub-a9e95ffe81d843ed8789f708ee388a09.r2.dev/modeStaticGraph.gif"

@@ -1,6 +1,3 @@
-import uptoright from "../img/upToRight.e6e1d6cb.svg";
-import uptorightPre from "../img/upToRightPre.7c2ce27a.svg";
-import warrior from "../img/mavWarrior.0711e780.gif";
 const CommSection = () => {
   return (
     <div className="my-56">
@@ -9,18 +6,18 @@ const CommSection = () => {
       </h1>
       <div className="grid grid-cols-3 grid-rows-2 gap-3 m-w-full max-w-[1300px] mx-auto">
         <div className="row-span-2">
-          <div className="h-full p-6 shadow-sm bg-opacity-15 bg-violet-900 rounded-2xl backdrop-filter backdrop-blur-lg">
+          <div className="h-full p-6 shadow-sm incent-div group">
             <p className="text-sm tracking-wider uppercase">
               Maverick warrior program
             </p>
             <hr className="my-3 border border-gray-800" />
-            <div className="absolute w-2/3 bottom-8">
-              <h2 className="mb-6 text-2xl">
+            <div className="relative w-2/3 top-52">
+              <h2 className="mb-6 text-2xl font-light">
                 Join our incentivized community initiative.
               </h2>
               <a
                 href=""
-                className="px-3 py-2 font-semibold tracking-wider uppercase border-2 rounded-full group-hover:bg-violet-800 border-violet-800 "
+                className="px-3 py-2 font-bold tracking-wider uppercase border-2 rounded-full group-hover:bg-violet-800 border-violet-800 "
                 target="href"
               >
                 Learn More →
@@ -41,8 +38,8 @@ const CommSection = () => {
               </div>
               <div className="">
                 <div>
-                  <h2 className="my-4 text-3xl">Twitter →</h2>
-                  <p className="font-light text-md">
+                  <h2 className="my-4 text-3xl font-light">Twitter →</h2>
+                  <p className="text-md">
                     Follow Maverick on Twitter to be the first to hear about
                     project updates and community events and to join live
                     Maverick Twitter Spaces.
@@ -63,8 +60,8 @@ const CommSection = () => {
               </div>
               <div>
                 <div>
-                  <h2 className="my-4 text-3xl">Discord →</h2>
-                  <p className="font-light text-md">
+                  <h2 className="my-4 text-3xl font-light">Discord →</h2>
+                  <p className="text-md">
                     Join the Maverick Discord server to hang out, share
                     knowledge, and exchange opinions with Team Maverick and the
                     Maverick community.
@@ -85,8 +82,8 @@ const CommSection = () => {
               </div>
               <div>
                 <div>
-                  <h2 className="my-4 text-3xl">Telegram →</h2>
-                  <p className="font-light text-md">
+                  <h2 className="my-4 text-3xl font-light ">Telegram →</h2>
+                  <p className="text-md">
                     Message us on Telegram to ask us anything about Maverick.
                   </p>
                 </div>
@@ -108,8 +105,8 @@ const CommSection = () => {
               </div>
               <div>
                 <div>
-                  <h2 className="my-4 text-3xl">Events →</h2>
-                  <p className="font-light text-md">
+                  <h2 className="my-4 text-3xl font-light">Events →</h2>
+                  <p className=" text-md">
                     Read more and sign up for the latest community events.
                   </p>
                 </div>
