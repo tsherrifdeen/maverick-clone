@@ -1,6 +1,6 @@
 const CommSection = () => {
   return (
-    <div className="my-56">
+    <div id="community" className="my-56">
       <h1 className="mb-16 text-6xl font-extrabold text-center uppercase">
         Get involved <span className="text-outline">in the community</span>
       </h1>

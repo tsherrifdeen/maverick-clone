@@ -1,6 +1,6 @@
 const graphSection = () => {
   return (
-    <div className="h-[90vh] overflow-y-scroll scrollable mt-36">
+    <div id="amm" className="h-[90vh] overflow-y-scroll scrollable mt-36">
       <div className="grid max-w-[1200px] mx-auto items-center grid-cols-5 gap-x-20">
         <div className="col-span-2 h-[90vh]">
           <span className="text-xs opacity-70">1 / 4</span>

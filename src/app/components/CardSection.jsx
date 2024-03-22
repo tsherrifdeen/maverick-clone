@@ -45,7 +45,7 @@ const CardSection = () => {
     };
   }, []);
   return (
-    <div className="my-60">
+    <div className="my-60" id="docs">
       <h1 className="mb-16 text-6xl font-extrabold text-center uppercase">
         Increase Efficiency <span className="text-outline">with Maverick</span>
       </h1>
