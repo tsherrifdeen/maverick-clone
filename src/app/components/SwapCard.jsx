@@ -1,21 +1,17 @@
-
 import { useState } from "react";
-import { useAccount, useDisconnect, useEnsAvatar, useEnsName } from 'wagmi'
+import { useAccount, useDisconnect, useEnsAvatar, useEnsName } from "wagmi";
 import { formatAddress } from "../config";
-
-
+import downArrow from "../img/icons8-down-24.png";
 const SwapCard = ({ isModalOpen, changeModalState }) => {
-
-  const { address, status } = useAccount()
+  const { address, status } = useAccount();
   // const { disconnect } = useDisconnect()
-  const { data: ensName } = useEnsName({ address })
-
+  const { data: ensName } = useEnsName({ address });
 
   const ConnectWalletClickHandler = () => {
     console.log("[Connect-Wallet]: ");
     console.log("[state]: ", isModalOpen);
     changeModalState();
-  }
+  };
 
   return (
     <>
@@ -33,11 +29,14 @@ const SwapCard = ({ isModalOpen, changeModalState }) => {
             </svg>
           </button>
         </div>
-        <div className="flex items-center justify-between w-full p-3 my-3 bg-gray-200 border border-gray-100 border-opacity-20 bg-opacity-5 rounded-3xl backdrop-filter backdrop-blur-lg">
-          <button type="button" className="flex px-3 py-2 bg-gray-200 rounded-lg bg-opacity-10 backdrop-filter backdrop-blur-lg">
+        <div className="flex items-center justify-between w-full p-3 my-2 bg-gray-300 border border-gray-400 border-opacity-20 bg-opacity-5 rounded-3xl backdrop-filter backdrop-blur-lg">
+          <button
+            type="button"
+            className="flex px-3 py-2 bg-gray-200 rounded-lg bg-opacity-10 backdrop-filter backdrop-blur-lg"
+          >
             <h6>Add Token</h6>
             <svg
-              className="w-8 h-6 m-0 text-white"
+              className="w-8 h-6 m-0"
               focusable="false"
               aria-hidden="true"
               data-testid="KeyboardArrowDownIcon"
@@ -53,7 +52,10 @@ const SwapCard = ({ isModalOpen, changeModalState }) => {
           />
         </div>
         <div className="flex justify-center">
-          <div className="absolute z-10 w-10 h-10 bg-gray-200 border border-gray-100 bottom-1/2 border-opacity-20 bg-opacity-5 rounded-3xl backdrop-filter backdrop-blur-lg">
+          <button className="absolute p-2 bg-gray-200 border border-gray-400 top-[40%] border-opacity-20 bg-opacity-5 rounded-3xl">
+            <img className="w-5 h-5" src={downArrow.src} alt="" />
+          </button>
+          {/* <div className="absolute z-10 w-10 h-10 bg-gray-200 border border-gray-100 bottom-1/2 border-opacity-20 bg-opacity-5 rounded-3xl backdrop-filter backdrop-blur-lg">
             <button className="w-8 h-8 m-auto" type="button" disabled="">
               <svg
                 focusable="false"
@@ -64,11 +66,14 @@ const SwapCard = ({ isModalOpen, changeModalState }) => {
                 <path d="m20 12-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z" />
               </svg>
             </button>
-          </div>
+          </div> */}
         </div>
 
-        <div className="flex items-center justify-between w-full p-3 my-3 bg-gray-100 border border-gray-100 rounded-3xl border-opacity-20 bg-opacity-5 backdrop-filter backdrop-blur-lg">
-          <button type="button" className="flex px-3 py-2 bg-gray-100 rounded-lg bg-opacity-10 backdrop-filter backdrop-blur-lg">
+        <div className="flex items-center justify-between w-full p-3 my-2 bg-gray-400 border border-gray-400 rounded-3xl border-opacity-20 bg-opacity-5 backdrop-filter backdrop-blur-lg">
+          <button
+            type="button"
+            className="flex px-3 py-2 bg-gray-100 rounded-lg bg-opacity-10 backdrop-filter backdrop-blur-lg"
+          >
             <h6>Add Token</h6>
             <svg
               className="w-8 h-6 m-0 text-white"
@@ -86,20 +91,33 @@ const SwapCard = ({ isModalOpen, changeModalState }) => {
             placeholder="0"
           />
         </div>
-        <button type="button" className="w-full px-4 py-3 text-white rounded-lg bg-violet-800">
-          {
-            status === "connecting" && isModalOpen === true ?
-              <p className="font-bold" onClick={ConnectWalletClickHandler} > Connecting . . . </p>
-              :
-              status === "connected" ?
-                <p className="font-bold" onClick={ConnectWalletClickHandler} > {ensName ? `${ensName} (${formatAddress(address)})` : formatAddress(address)} </p>
-                :
-                <p className="font-bold" onClick={ConnectWalletClickHandler} > Connect Wallet </p>
-          }
+        <button
+          type="button"
+          className="w-full px-4 py-3 text-white rounded-lg bg-violet-800"
+        >
+          {status === "connecting" && isModalOpen === true ? (
+            <p className="font-bold" onClick={ConnectWalletClickHandler}>
+              {" "}
+              Connecting . . .{" "}
+            </p>
+          ) : status === "connected" ? (
+            <p className="font-bold" onClick={ConnectWalletClickHandler}>
+              {" "}
+              {ensName
+                ? `${ensName} (${formatAddress(address)})`
+                : formatAddress(address)}{" "}
+            </p>
+          ) : (
+            <p className="font-bold" onClick={ConnectWalletClickHandler}>
+              {" "}
+              Connect Wallet{" "}
+            </p>
+          )}
         </button>
       </div>
       <div className="flex items-center justify-center my-4 text-sm font-semibold text-gray-500 w-">
-        <p>Powered by</p>{"  "}
+        <p>Powered by</p>
+        {"  "}
         <svg
           width="158"
           height="12"
